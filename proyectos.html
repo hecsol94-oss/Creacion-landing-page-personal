@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="icon" href="icon/favicon 10 sobre 10.webp">
+    <title>Proyectos</title>
+</head>
+<body>
+    <header class="encimeraCabecera">
+        <div class="nav-container">
+            <div class="nav-proyectos">
+                <img class="iconos" src="icon/icons8-proyectos-48.png" alt="">
+                <span>Proyectos</span>
+            </div>
+            <div class="nav-links">
+                <img class="iconos" src="icon/icons8-casa-40.png" alt="home">
+                <a href="inicio.html">Home</a>
+
+                <img class="iconos" src="icon/icons8-currículum-100.png" alt="">
+                <a href="curriculumVitae.html">Curriculum Vitae</a>
+        
+                <img class="iconos" src="icon/icons8-teléfono-desconectado-48.png" alt="">
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>    
+    </header>
+<section>
+<div class="contenedor">
+    <h1>Mis proyectos</h1>
+    <div class="card">
+        <div class="subcarta">
+            <img class="imgcartas" src="icon/icons8-eclipse-de-java-50.png" alt="">
+            <img class="imgcartas" src="icon/icons8-mysql-48 (1).png" alt="">
+            <h3>Gestion de citas Edna Moda</h3>
+            <p>Proyecto integrador que desarrolla una aplicación de gestión para el taller de Edna Moda en Java e integracion de MySQL.</p>
+        </div>
+        <div class="subcarta">
+            <img class="imgcartas" src="icon/icons8-amazon-aws-48.png" alt="">
+            <h3>Despliegue de Moodle</h3>
+            <p>Proyecto de despliegue de Moodle en AWS mediante una infraestructura segura y escalable con VPC, EC2 y RDS.</p>
+        </div>
+        <div class="subcarta">
+            <img class="imgcartas" src="icon/icons8-html-5-50.png" alt="">
+            <img class="imgcartas" src="icon/icons8-css3-50.png" alt="">
+            <h3>Web corporativa responsive</h3>
+            <p>Proyecto de desarrollo de una web corporativa responsive con HTML5 y CSS, basada en estructura semántica.</p>
+        </div>
+    </div>
+    <div class="ednamoda">
+    <div class="contenido-flex-ednamoda">
+        <div class="texto-ednamoda">
+            <h2>Proyecto Integrador de gestion de citas Edna Moda </h2>
+            <p>El Proyecto Integrador representa la culminación del aprendizaje en los módulos de <strong>Programación, Bases de Datos y Entornos de Desarrollo</strong>.</p>
+            <ul>
+                <li><strong>Introducción y Objetivos:</strong> Contextualización del proyecto basado en el taller de sastrería de "Edna Moda". Se establecen las metas principales: gestionar un sistema CRUD de citas, clientes y empleados con reglas de negocio complejas, como la restricción de encuentros entre héroes y villanos.</li>
+                <li><strong>Tecnologías y Metodología:</strong> Uso de Java (JDK 21) bajo el patrón <strong>MVC (Modelo-Vista-Controlador)</strong> y Swing para la interfaz. Se aplicó la metodología ágil <strong>SCRUM</strong>, organizada en Sprints y gestionada a través de Trello y GitHub para el control de versiones.</li>
+                <li><strong>Desarrollo de Software (Entornos y Programación):</strong> Creación de diagramas de <strong>Casos de Uso y de Clases (UML)</strong> para definir la lógica. Implementación de validaciones robustas, permisos diferenciados por roles (Aprendiz, Oficial, Maestro) y pruebas unitarias con <strong>JUnit</strong> para garantizar la estabilidad del código.</li>
+                <li><strong>Diseño de Datos (Bases de Datos):</strong> Elaboración del Modelo Entidad-Relación y su transformación al Modelo Relacional. La base de datos en <strong>MySQL</strong> fue normalizada para evitar redundancias, asegurando la integridad referencial mediante claves primarias, foráneas y restricciones de integridad.</li>
+                <li><strong>Resultados y Futuro:</strong> Conclusiones sobre la consolidación del trabajo en equipo y la entrega de un producto funcional. Se proponen mejoras futuras como la migración a una arquitectura cliente-servidor y el uso de un ORM (Hibernate) para la persistencia de datos.</li>
+            </ul>
+        </div>
+
+        <div class="imagen-ednamoda">
+            <img src="img/ednamoda.png" alt="Captura del Proyecto Integrador">
+        </div>
+    </div>
+            <img src="img/icons8-arriba-en-círculo-2-30.png" alt="" class="flechaArriba">
+        </div>
+
+    <div class="Moodle">
+    <div class="contenido-flex-Moodle">
+        <!-- Bloque de imagen (Ahora a la izquierda) -->
+        <div class="imagen-Moodle">
+            
+            <img src="img/Moodle.png" alt="Esquema de arquitectura AWS Moodle">
+        </div>
+
+        <!-- Bloque de texto (Ahora a la derecha) -->
+        <div class="texto-Moodle">
+            <h2>Despliegue de LMS Moodle en AWS</h2>
+            <p>Este proyecto final de la asignatura de <strong>Fundamentos de la computacion en la nube</strong>, consistió en el diseño de una infraestructura de nube escalable y segura bajo el modelo de responsabilidad compartida de AWS.</p>
+            <ul>
+                <li><strong>1. Red en la nube (VPC):</strong> Se configuró una <strong>Amazon VPC</strong> en la región us-east-1 con 2 zonas de disponibilidad para asegurar la alta disponibilidad del sistema. Se segmentó la red en una subred pública (10.0.0.0/24) con <strong>Internet Gateway</strong> y una privada (10.0.1.0/24) para proteger los datos.</li>
+                <li><strong>2. Servidor Web (EC2):</strong> Se lanzó una instancia <strong>t3.micro (Amazon Linux 2023)</strong>. El acceso se restringió mediante un <strong>Security Group</strong> que permite SSH (puerto 22) para gestión y HTTP (puerto 80) para los usuarios finales.</li>
+                <li><strong>3. Base de Datos (RDS):</strong> Se implementó <strong>MySQL en Amazon RDS</strong> bajo una subred privada. Se configuró para aceptar tráfico exclusivamente desde el servidor EC2 (puerto 3306), desactivando el acceso público para garantizar la integridad de la información.</li>
+                <li><strong>4. Instalación de Moodle:</strong> Se preparó el entorno con <strong>Apache y PHP</strong>, instalando el núcleo de Moodle y configurando el directorio <i>moodledata</i> fuera del acceso público por seguridad. Se vinculó satisfactoriamente la aplicación con el endpoint de RDS.</li>
+                <li><strong>5. Gestión y Pruebas:</strong> Se asignó una <strong>Elastic IP</strong> para mantener un direccionamiento estático y evitar fallos en los enlaces internos al reiniciar la instancia. Se validó el sistema creando usuarios (Admin, Profesor, Alumno) y completando un ciclo académico real con entrega y calificación de tareas.</li>
+                <li><strong>6. Alta Disponibilidad y Almacenamiento (EFS):</strong> Se evolucionó a una arquitectura multi-instancia mediante la creación de una <strong>AMI (Amazon Machine Image)</strong> personalizada. Para la persistencia de archivos compartidos (moodledata), se implementó <strong>Amazon EFS</strong>, configurando reglas NFS (puerto 2049) para permitir la conexión de múltiples nodos simultáneos.</li>
+                <li><strong>7. Balanceo de Carga (ALB):</strong> Se desplegó un <strong>Application Load Balancer (ALB)</strong> vinculado a un <strong>Target Group</strong> con dos instancias activas. Se configuró el punto de acceso único mediante el DNS del balanceador, permitiendo la distribución inteligente del tráfico y garantizando la resiliencia del servicio ante fallos de instancia.</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="responsive">
+    <div class="contenido-flex-responsive">
+        <!-- Bloque de texto (Izquierda) -->
+        <div class="texto-responsive">
+            <h2>Creación de Web Corporativa Responsive</h2>
+            <p>Este proyecto se centra en el diseño y desarrollo de una plataforma web completa bajo estándares de <strong>Lenguaje de Marcas</strong>, priorizando la estructura semántica, la limpieza del código y la experiencia de usuario.</p>
+            
+            <ul>
+                <li><strong>Estructura Semántica HTML5:</strong> Implementación de una arquitectura sólida dividida en secciones operativas: <i>Home</i>, Áreas de actuación para servicios, una sección de "Quiénes somos" y un sistema de contacto avanzado.</li>
+                
+                <li><strong>Formularios Técnicos:</strong> Desarrollo de un formulario de contacto integral utilizando todos los elementos de validación y tipos de datos nativos de <strong>HTML5</strong> para garantizar una interacción eficiente y segura.</li>
+                
+                <li><strong>Componentes de Navegación:</strong> Creación de un menú desplegable dinámico basado exclusivamente en listas HTML y <strong>CSS</strong>, logrando un aspecto visual atractivo mediante solapas desplegables sin dependencia de scripts externos.</li>
+                
+                <li><strong>Diseño Adaptativo (Responsive):</strong> Optimización total de la interfaz mediante <i>Media Queries</i> para asegurar una visualización perfecta en cinco escenarios: resoluciones superiores a 1300px, tablets y teléfonos (tanto en posición vertical como horizontal).</li>
+                
+                <li><strong>Despliegue y Gestión:</strong> Investigación y ejecución del alojamiento del sitio en plataformas como <strong>GitHub Pages</strong>, aplicando metodologías de organización, control de versiones y limpieza de código exigidas en entornos laborales.</li>
+            </ul>
+        </div>
+
+        <!-- Bloque de imagen (Derecha) -->
+        <div class="imagen-responsive">
+            <img src="img/web corporativa responsive ROCK & DAWpng.png" alt="Vista previa de la web en diferentes dispositivos">
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <footer class="footer">
+        @Universidad Europea De Madrid 2026
+    </footer>
+</body>
+</html>

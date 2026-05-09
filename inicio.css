@@ -1,0 +1,382 @@
+body{
+    background-image: url(img/fondo\ home.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:auto;
+}
+
+.encimeraCabecera {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    position: relative;
+    right: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.nav-casa {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+
+.iconos {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left:25px;
+}
+
+.cabecera {
+    background-color: rgb(3, 35, 54);
+    color: whitesmoke;
+    width: 100%;
+    height: 325px;
+    
+}
+
+.contenido-banner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 40px;
+    position: relative;
+    top: 50px;
+}
+
+.texto-banner {
+    text-align: left; 
+}
+
+h2 {
+    font-size: 4rem; 
+    margin: 0;
+}
+
+#autor {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.birrete {
+    width: 200px;
+    height: auto;
+}
+
+.card{
+    display: inline-block;
+    position: relative;
+    width: 750px;
+    height: 925px;
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    
+}
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front {
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.menu a{
+    display:block;
+    margin:12px;
+    padding:8px;
+    background:rgb(3, 35, 54);
+    margin:auto;
+    color:white;
+    text-decoration:none;
+    border: 2px solid whitesmoke;
+}
+
+.opciones{
+    padding:40px;
+}
+
+.cardsecundaria{
+    border:1px solid black;
+    background-color: white;
+    color: black;
+    display:inline-block;
+    margin:10px;
+    padding-bottom: 10px;
+    width:250px; 
+    height: 300px;
+}
+
+.cardsecundaria img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.footer{
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Arial";
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+
+    .contenido-banner {
+        text-align: center;
+    }
+
+    .contenido-banner h2 {
+        font-size: 25px;
+    }
+
+    #autor {
+        font-size: 15px;
+    }
+
+    .cabecera{
+        height: 200px;
+    }
+
+    .birrete{
+        width: 100px;
+        height: 100px;
+    }
+
+    .card {
+        width: 600px; 
+        height: 850px; 
+        margin-left: auto; 
+        margin-right: auto;
+        display: block; 
+    }
+
+    .card .back{
+        position: relative;
+        right: 12px;
+    }
+
+    .card .back h3 {
+        font-size: 22px;
+    }
+    
+    .card .back p {
+        font-size: 0.9em;
+    }
+
+    .cardsecundaria{
+        width: 225px;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+
+    body{
+        box-sizing: border-box;
+    }
+    
+    .encimeraCabecera{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .nav-container{
+        position: relative;
+        left: 15px;
+    }
+
+    .iconos{
+        text-align: center;
+        width: 10px;
+        height: 10px;
+    }
+
+    .card{
+        width: 250px;
+        height: 335px;
+    }
+
+    .card .front h3{
+        font-size: 12px;
+    }
+
+    .card .back h3 {
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    
+    .card .back p {
+        font-size: 4px;
+    }
+
+    .card .back .link{
+        font-size: 8px;
+        border-top: 0.5px solid #f3f3f3;
+        position:relative;
+        bottom: 30px;
+        margin-top: auto;
+    }
+
+    .card .back .link a{
+        position:relative;
+        bottom: 30px;
+    }
+
+    .opciones{
+        position: relative;
+        bottom: 20px;
+    }
+
+    .cardsecundaria {
+        width: 75px; 
+        height: 100px;
+        margin: 3px 0;
+    }
+    .card:hover img{
+        height: 50px;
+    }
+    
+    .contenido-banner {
+        text-align: center;
+    }
+
+    .contenido-banner h2 {
+        font-size: 20px;
+    }
+
+    #autor {
+        font-size: 10px;
+    }
+
+    .cabecera{
+        height: 200px;
+    }
+
+    .birrete{
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer{
+        padding: 5px;
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 345px) {
+    .nav-links a {
+        font-size: 5px;
+    }
+    .iconos {
+        margin-left: 2px;
+    }
+    .nav-casa{
+        position: relative;
+        left: 1px;
+    }
+}

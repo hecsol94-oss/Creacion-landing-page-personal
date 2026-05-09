@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: auto; 
+    padding: auto;
+    text-align: justify;
+}
+
+.encimeraCabecera {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    position: relative;
+    right: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.nav-proyectos {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+
+.iconos {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left:25px;
+}
+
+.contenedor {
+    width: 100%; 
+    margin-top: 80px; 
+    display: block;
+}
+
+.contenedor > div {
+    padding: 50px 10%; 
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+h1{
+    margin-top: 125px;
+    text-align: center;
+}
+
+.card {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    flex-wrap: wrap;          
+    gap: 20px;                
+}
+
+
+.subcarta{
+    border:1px solid black;
+    background-color: #f8f9fa;
+    color: black;
+    margin:10px;
+    width:400px; 
+    height: auto;
+    border-radius: 15px;
+    margin-right: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    transition: 0.5s;
+}
+
+.imgcartas{
+    width: 100px;
+    height: 100px;
+}
+
+.subcarta:hover {
+    transform: translateY(-10px);
+}
+
+h2{
+    color: black;
+    position:relative;
+    left:-20px;
+    display: inline;
+}
+
+.ednamoda {
+    background-color: whitesmoke; 
+}
+
+.contenido-flex-ednamoda {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between; 
+    gap: 40px;              
+}
+
+.texto-ednamoda {
+    flex: 1;                
+}
+
+.imagen-ednamoda {
+    text-align: center; 
+    width: 700px;    
+    height: 500px;
+    position: relative;
+    top:50px;
+}
+
+.imagen-ednamoda img {
+    max-width: 100%;       
+    height: auto;
+    border-radius: 10px;    
+}
+
+.Moodle {
+    background-color: white; 
+}
+
+.contenido-flex-Moodle {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between; 
+    gap: 40px;              
+}
+
+.texto-Moodle {
+    flex: 1;          
+}
+
+.imagen-Moodle {
+    text-align: center;   
+}
+
+.imagen-Moodle img {
+    max-width: 100%;       
+    border-radius: 10px;    
+}
+
+.responsive {
+    background-color: whitesmoke; 
+}
+
+.contenido-flex-responsive {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between; 
+    gap: 40px;         
+    margin-bottom: 100px;     
+}
+
+.texto-responsive {
+    flex: 1;          
+}
+
+.imagen-responsive {
+    width: 700px;    
+    height: 500px;
+    text-align: center;   
+    position: relative;
+    top:70px;
+}
+
+.imagen-responsive img {
+    max-width: 100%;   
+    height: auto;    
+    border-radius: 10px;    
+}
+
+.footer{
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Arial";
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+
+    .imagen-ednamoda, .imagen-responsive {
+        width: 100%; 
+        height: auto;
+        top: 0; /* Reseteamos la posición relative que tenías */
+    }
+
+    .contenido-flex-ednamoda {
+        flex-direction: column; 
+        text-align: justify;
+    }
+
+    .contenido-flex-responsive {
+        flex-direction: column; 
+        text-align: justify;
+    }
+
+    .contenido-flex-Moodle {
+        flex-direction: column;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 576px){
+    body{
+        box-sizing: border-box;
+    }
+    
+    .encimeraCabecera{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .nav-container{
+        position: relative;
+        left: 15px;
+    }
+
+    .iconos{
+        text-align: center;
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav-links{
+        position:relative;
+    }
+
+    .contenedor{
+        font-size: 10px;
+    }
+
+    .imgcartas{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .card h3{
+        font-size: 10px;
+    }
+
+    .card p{
+        font-size: 8px;
+    }
+
+    .subcarta {
+        width: 90%; /* En lugar de 400px */
+        margin-right: 0; /* Quitamos el margen derecho que empuja hacia afuera */
+        margin-left: 0;
+    }
+    
+    .card {
+        padding: 0;
+        gap: 10px;
+    }
+
+    .imagen-ednamoda .imagen-responsive {
+        width: 100%; 
+        height: 200px;
+        top: 0; /* Reseteamos la posición relative que tenías */
+    }
+
+    
+}
+
+@media (max-width: 345px) {
+    .nav-links a {
+        font-size: 5px;
+    }
+    .iconos {
+        margin-left: 2px;
+    }
+    .nav-proyectos{
+        position: relative;
+        left: 1px;
+    }
+}

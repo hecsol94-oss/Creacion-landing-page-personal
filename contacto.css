@@ -1,0 +1,244 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align:center;
+    background-color: white;
+    background-image: url(img/fondo\ formulario.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.encimeraCabecera {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    position: relative;
+    right: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.nav-contacto {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+
+.iconos {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left:25px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:100px;
+    color: white;
+}
+
+.formulario {
+    background-color: #f4f4f4;
+    border: 2px solid black;
+    width: 90%;          
+    max-width: 600px;     
+    height: auto;         
+    min-height: 400px;    
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 200px auto;    
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+legend{
+    font-weight: bold;
+    color: #2980b9;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+label {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.radiobuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+    right: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+textarea{
+    width:90%;
+    max-width: 560px;
+    height:150px;
+    border: 1px solid #ccc;
+}
+
+fieldset{
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    border-radius:10px;
+}
+.subcampo{
+    margin-bottom:20px;
+}
+.separador{
+    margin-bottom:20px;
+}
+
+.intervaloMeses{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-enviar {
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #555;
+}
+
+.seccion3{
+    background-image: url(img/fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 3600px;
+}
+
+.footer{
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Arial";
+    text-align: center;
+}
+
+@media (max-width: 576px){
+    body{
+        box-sizing: border-box;
+    }
+    
+    .encimeraCabecera{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .nav-container{
+        position: relative;
+        left: 15px;
+    }
+
+    .iconos{
+        text-align: center;
+        width: 10px;
+        height: 10px;
+    }
+
+    .nav-links{
+        position:relative;
+    }
+
+    .footer{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .nav-contacto{
+        position: relative;
+        right: 30px;
+    }
+
+}
+
+@media (max-width: 345px){
+    .detalles{
+        position: relative;
+        right: 13px;
+    }
+
+    .radiobuttons{
+        position: relative;
+        left: 1px;
+    }
+
+    .nav-links a {
+        font-size: 5px;
+    }
+    .iconos {
+        margin-left: 2px;
+    }
+    .nav-contacto{
+        position: relative;
+        left: 1px;
+    }
+}

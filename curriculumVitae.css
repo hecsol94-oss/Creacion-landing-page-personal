@@ -1,0 +1,250 @@
+body{
+    margin: auto;
+    padding: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    background: #2c3e50 url(img/fondo\ curriculum.jpg); /* El color carga al instante */    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.encimeraCabecera {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    position: relative;
+    right: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.nav-curriculum {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+
+.iconos {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-left:25px;
+}
+
+section{
+    height: auto;
+    margin-top: 125px;
+    margin-bottom: 200px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 125px;
+}
+
+.main-container {
+    background-color: #f4f4f4;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    color: #333;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.header h1 {
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;         
+    flex-direction: row;   
+    justify-content: space-between; 
+    gap: 40px;             
+}
+
+.left-content {
+    flex: 0 0 250px;       
+}
+
+.right-content {
+    flex: 1;               
+    border-left: 1px solid #ddd;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #F8F9FA;
+    width: 100%;
+}
+
+.media-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.media-line i {
+    width: 25px;
+    color: #555;
+    margin-right: 10px;
+}
+
+h3 {
+    color: #2980B9;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.project {
+    margin-bottom: 25px;
+}
+
+.project-name {
+    color: #2C3E50;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.procoject-info { 
+    font-style: italic;
+    font-size: 13px;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.project-description {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer{
+    font-size: 16px;
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Arial";
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .content {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .left-content {
+        flex: 1 1 100%; 
+        text-align: center; 
+    }
+
+    .media-line {
+        justify-content: center; 
+    }
+
+    .right-content {
+        flex: 1 1 100%;
+        border-left: none; 
+        padding-left: 0;
+        padding-right: 0;
+        background-color: transparent; 
+    }
+
+    .main-container {
+        padding: 20px;
+        margin-top: 100px; 
+        margin-bottom: 80px; 
+    }
+
+    body {
+        font-size: 0.9em; 
+    }
+
+    .encimeraCabecera{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .nav-container{
+        position: relative;
+        left: 15px;
+    }
+
+    .iconos{
+        text-align: center;
+        width: 10px;
+        height: 10px;
+    }
+
+    .footer{
+        padding: 5px;
+        font-size: 5px;
+    }
+
+    .nav-links .nav-curriculum{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 345px) {
+    .nav-links a {
+        font-size: 5px;
+    }
+    .iconos {
+        margin-left: 2px;
+    }
+    .nav-curriculum{
+        position: relative;
+        left: 1px;
+    }
+}
+

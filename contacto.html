@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="icon" href="icon/favicon 10 sobre 10.webp">
+    <title>Formulario de contacto</title>
+</head>
+<body>b
+    <header class="encimeraCabecera">
+        <div class="nav-container">
+            <div class="nav-contacto">
+                <img class="iconos" src="icon/icons8-teléfono-desconectado-48.png" alt="">
+                <span>Contacto</span>
+            </div>
+            <div class="nav-links">
+                <img class="iconos" src="icon/icons8-proyectos-48.png" alt="">
+                <a href="proyectos.html">Proyectos</a>
+
+                <img class="iconos" src="icon/icons8-currículum-100.png" alt="">
+                <a href="curriculumVitae.html">Curriculum Vitae</a>
+        
+                <img class="iconos" src="icon/icons8-casa-40.png" alt="home">
+                <a href="inicio.html">Home</a>
+            </div>
+        </div>    
+    </header>
+    <section>
+        <h1>Formulario para contactar conmigo</h1>
+        <form action="" method="post" action="mailto:hecsol94@gmail.com" class="formulario">
+            <fieldset class="campo">
+                <legend>Datos personales</legend>
+                <label class="subcampo">Nombre Completo:
+                    <br><input type="text" cols=10 placeholder="Nombre y apellidos" required>
+                </label>
+                <br>
+                <label class="subcampo">Email:
+                    <br><input type="email" cols=10 placeholder="Entidad juridica o persona fisica" required>
+                </label>
+                <br>
+                <label>Fecha de inicio:
+                    <br><input type="date" name="fechaInicio" required>
+                </label>
+            </fieldset>
+            <fieldset class="detalles">
+            <legend>Detalles técnicos de la propuesta</legend>
+
+            <!-- Uso de select para elegir el lenguaje principal -->
+            <label>Tecnología principal del proyecto
+                <div class="radiobuttons">
+                    <input type="radio" name="stack" required>Java (Backend)
+                    <input type="radio" name="stack" >HTML5 / CSS3 (Frontend)
+                    <input type="radio" name="stack" >Full Stack
+                    <input type="radio" name="stack" >Analisis de Datos
+                </div>
+            </label>
+            <!-- Uso de datalist para sugerir herramientas -->
+            <br><label for="herramienta">Herramienta o Framework sugerido:</label>
+            <input list="herramientas" id="herramienta" name="herramienta" placeholder="Ej: Spring Boot, Bootstrap...">
+            <datalist id="herramientas">
+                <option value="Spring Boot (Java)">
+                <option value="Hibernate">
+                <option value="Bootstrap (CSS)">
+                <option value="MySQL">
+                <option value="GitHub Actions">
+            </datalist>
+
+            <!-- Uso de input type="url" para validar enlaces -->
+            <label for="repo">Enlace a repositorio o referencia (opcional):</label>
+            <input type="url" id="repo" name="repo" placeholder="https://github.com/tu-usuario/proyecto">
+
+            <!-- Uso de input type="number" para estimar duración -->
+            <label for="duracion">Duración estimada del proyecto:</label>
+            <div class="intervaloMeses">
+                <span>1 mes</span>
+                <input type="range" id="duracion" name="duracion" 
+                min="1" max="12" value="3" step="1">
+                <span>+12 meses</span>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios</legend>
+                <label><textarea name="comentarios" id=""></textarea></label>
+            </fieldset>
+            <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+        </form>
+    </section>
+    <footer class="footer">
+        @Universidad Europea De Madrid 2026
+    </footer>
+</body>
+</html>
