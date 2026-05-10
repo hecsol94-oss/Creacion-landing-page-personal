@@ -221,16 +221,6 @@ fieldset{
 }
 
 @media (max-width: 345px){
-    .detalles{
-        position: relative;
-        right: 13px;
-    }
-
-    .radiobuttons{
-        position: relative;
-        left: 1px;
-    }
-
     .nav-links a {
         font-size: 5px;
     }
@@ -240,5 +230,15 @@ fieldset{
     .nav-contacto{
         position: relative;
         left: 1px;
+        font-size: 5px;
+    }
+
+    .footer{
+        padding: 15px;
+        font-size: 5px;
+    }
+
+    .encimeraCabecera{
+        padding: 15px;
     }
 }

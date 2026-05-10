@@ -378,5 +378,15 @@ h2 {
     .nav-casa{
         position: relative;
         left: 1px;
+        font-size: 5px;
+    }
+
+    .footer{
+        padding: 15px;
+        font-size: 5px;
+    }
+
+    .encimeraCabecera{
+        padding: 15px;
     }
 }

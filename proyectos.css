@@ -210,7 +210,7 @@ h2{
     text-align: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1025px) {
 
     .imagen-ednamoda, .imagen-responsive {
         width: 100%; 
@@ -311,5 +311,15 @@ h2{
     .nav-proyectos{
         position: relative;
         left: 1px;
+        font-size: 5px;
+    }
+
+    .footer{
+        padding: 15px;
+        font-size: 5px;
+    }
+
+    .encimeraCabecera{
+        padding: 15px;
     }
 }
