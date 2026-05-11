@@ -215,7 +215,7 @@ h2{
     .imagen-ednamoda, .imagen-responsive {
         width: 100%; 
         height: auto;
-        top: 0; /* Reseteamos la posición relative que tenías */
+        top: 0; 
     }
 
     .contenido-flex-ednamoda {
@@ -282,8 +282,8 @@ h2{
     }
 
     .subcarta {
-        width: 90%; /* En lugar de 400px */
-        margin-right: 0; /* Quitamos el margen derecho que empuja hacia afuera */
+        width: 90%; 
+        margin-right: 0; 
         margin-left: 0;
     }
     
@@ -295,7 +295,7 @@ h2{
     .imagen-ednamoda .imagen-responsive {
         width: 100%; 
         height: 200px;
-        top: 0; /* Reseteamos la posición relative que tenías */
+        top: 0; 
     }
 
     
